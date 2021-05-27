@@ -10,8 +10,9 @@
 .header__logo {
     width: 100px;
     margin: 0 20px;
-    margin-top: 18px;
+    margin-top: 15px;
     object-fit: contain;
+    margin-bottom: 9px;
 }
 
 .header__optionBasket{

@@ -1,0 +1,29 @@
+/* .carousel > img{
+    width: 100%;
+    mask-image: linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0));
+    z-index: -1;
+    margin-bottom: -100px;
+} */
+.carousel{
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: -80px; */
+    mask-image: linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0.6));
+    z-index: -1;
+}
+
+.carousel .slide{
+    /* height: 45vh; */
+   
+}
+
+.carousel .slide img{
+    max-height: 100%;
+    width: auto;
+}
+
+.carousel__image{
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
