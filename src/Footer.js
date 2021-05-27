@@ -73,7 +73,7 @@ function Footer() {
                     {/* img  */}
                     <Link to="/">
 
-                        <img className="footer__logo" src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="logo" />
+                        <img className="footer__logo" src="ama2.png" alt="logo" />
                     </Link>
                     {/* button  */}
                     <button className="footer__button">

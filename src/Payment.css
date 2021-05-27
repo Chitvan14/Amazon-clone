@@ -45,3 +45,15 @@
     border-color: #a88734 #9c7e31 #846a29;
     color: #111;
 }
+
+.payment__priceContainer >p{
+    font-size: 12px;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+}
+.payment__priceContainer >p>span{
+    font-size: 12px;
+   font-weight: 700;
+}

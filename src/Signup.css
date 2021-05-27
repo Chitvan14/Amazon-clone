@@ -1,4 +1,4 @@
-.login{
+.signup{
     background-color: white;
     width: 100%;
     height: 100vh;
@@ -8,7 +8,7 @@
  
 
 }
-.login__image{
+.signup__image{
     background-color: #131921;
     width: 100vw;
     height: 50px;
@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center;
 }
-.login__logo{
+.signup__logo{
     margin-top: 20px;
     margin-bottom: 20px;
     object-fit: contain;
@@ -27,7 +27,7 @@
    
 }
 
-.login__container{
+.signup__container{
     width: 300px;
     height: fit-content;
     display: flex;
@@ -37,27 +37,27 @@
     padding: 20px;
 }
 
-.login__container > h1{
+.signup__container > h1{
     font-weight: 500;
     margin-bottom: 20px;
 }
 
-.login__container > form > h5{
+.signup__container > form > h5{
     margin-bottom: 5px;
 }
 
-.login__container > form > input{
+.signup__container > form > input{
     height: 30px;
     margin-bottom: 10px;
     background-color: white;
     width: 98%;
 }
-.login__container > p{
+.signup__container > p{
     margin-top: 15px;
     font-size: 12px;
 }
 
-.login__signInButton{
+.signup__signInButton{
     background: #f0c14b;
     border-radius: 2px;
     width: 100%;
@@ -68,7 +68,7 @@
    
 }
 
-.login__registerButton{
+.signup__registerButton{
     border-radius: 2px;
     width: 100%;
     height: 30px;

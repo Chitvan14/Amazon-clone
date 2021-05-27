@@ -12,15 +12,18 @@ import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import {loadStripe} from "@stripe/stripe-js";
 import {Elements} from "@stripe/react-stripe-js";
+import SignUp from './Signup';
 
 const promise = loadStripe("pk_test_51IBywyEAjIG7X6ReTdObYhUvN28ikHSLbD0qvfFw2ST3pR47DjsEmXD69Yq3GveW4RKfzC88fvzlN0GaUSe3Li2Z00yDPEBngb");
 
 function App() {
-  // connect datalayer with firebase starts
+  
   const[{},dispatch]= useStateValue();
+
   useEffect(() => {
-    // will only run once when the app component loads 
+    // will only run once when the app component loads bc of []
     auth.onAuthStateChanged( authUser => {
+      // details of user 
       console.log('the user is >>>', authUser);
       if (authUser) {
         // the user just logged in / the user was logged in
@@ -45,7 +48,11 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
-
+        <Route path="/orders">
+          <Header />
+            <Orders />
+            <Footer/>
+          </Route>
 
 
           <Route path="/checkout">
@@ -61,15 +68,14 @@ function App() {
             </Elements>
           </Route>
 
-          <Route path="/orders">
-          <Header />
-            <Orders />
-            <Footer/>
-          </Route>
+         
 
 
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/signup">
+            <SignUp/>
           </Route>
 
           {/* default  */}
